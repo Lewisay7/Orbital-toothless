@@ -9,7 +9,7 @@ body {
     font-weight: bolder;
     text-align: center;
     font-size: large;
-    color: aqua;
+    color: rgb(45, 111, 12);
     -webkit-transition: .3s;
     transition: .3s;
 }
