@@ -20,7 +20,7 @@ body {
     height: 250px;
     font-weight: bold;
     text-align: center;
-    background: rgba(19, 160, 55, 0.641);
+    background: rgba(7, 62, 21, 0.641);
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -52,4 +52,12 @@ body {
 
 .BMI {
     font-size: x-large;
+}
+
+#site_footer{
+    font-size:large;
+    font-style: italic ;
+    font-weight: 500;
+    color: black;
+    background-color: lightgreen;
 }
