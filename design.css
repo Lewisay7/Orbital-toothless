@@ -53,3 +53,11 @@ body {
 .BMI {
     font-size: x-large;
 }
+
+#site_footer{
+    font-size:large;
+    font-style: italic ;
+    font-weight: 500;
+    color: black;
+    background-color: lightgreen;
+}
