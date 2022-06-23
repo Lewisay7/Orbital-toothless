@@ -58,6 +58,9 @@ body {
     font-size:large;
     font-style: italic ;
     font-weight: 500;
-    color: black;
-    background-color: lightgreen;
+    color:white ;
+    position: absolute;
+    bottom:0%;
+    width:100%;
+    background-color: rgba(7, 62, 21, 0.641);
 }

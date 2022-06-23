@@ -10,3 +10,10 @@ function navbarScroll() {
         $('.header').removeClass('small');
     }
 }
+
+function alertuser(){
+    var foodname=document.getElementById("food");
+    var grams=document.getElementById("input");
+    alert(foodname);
+    alert(grams);
+}
