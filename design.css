@@ -64,3 +64,12 @@ body {
     width:100%;
     background-color: rgba(7, 62, 21, 0.641);
 }
+
+.autosave{
+    text-align: right;
+    color:greenyellow;
+
+}
+.autosave--saving{
+    color:#99999
+}
