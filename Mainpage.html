@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TrackUrCals</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./design.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/default.date.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="header_logo">TrackUrCals</h1>
+    </div>
+
+    <div class="offset">
+
+
+        <form id="food_type" action=alertuser()>
+            <label for="food">Choose a food:</label>
+            <select name="food" id="food">
+              <option value="rice">Rice</option>
+              <option value="chicken">Chicken</option>
+              <option value="peanut">Peanut</option>
+              <option value="salad">Salad</option>
+            </select>
+            <label for="input">Input(in grams): </label>
+            <input type="number" id="input" name="input" max="9999" min="1">
+            <br>
+
+            <label for="excercise">Choose an excercise:</label>
+            <select name="excercise" id="excercise">
+              <option value="running">Running</option>
+              <option value="basketball">Basketball</option>
+              <option value="football">Football</option>
+              <option value="sitUp">Sit Up</option>
+              <option value="none">Lazy BumBum</option>
+        </select>
+
+            <label for="burnt">Burnt(in minutes): </label>
+            <input type="number" id="burnt" name="burnt" max="1440" min="1">
+            <br>
+            <br>
+            <div class="content">
+                <div class="container text-left">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="pick-date" placeholder="Pick A Date">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <input type="submit" value="Save">
+            <div class="autosave">All changes saved.</div>
+
+        </form>
+    </div>
+
+
+
+    <footer >
+        <div id="site_footer">
+        <p>Creators: Lim Zhen Yong | Lewis Chong Li Wei<br>
+            @OrbitalToothless</p>
+        </div>
+    </footer>
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="./new.js"></script>
+</body>
+
+</html>
