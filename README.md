@@ -13,4 +13,4 @@ A person’s net calorie intake provides a picture of one's lifestyle sustainabi
 
 This led us to think: Wouldn't it be better if an application did all the tedious work for us? 
 
-
+Feel free to try out our application through this link : https://lewisay7.github.io/Orbital-toothless/
