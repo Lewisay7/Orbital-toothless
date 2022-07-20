@@ -1,0 +1,40 @@
+.title,h1{
+    font-family:'system-ui';
+    color:rgba(7, 62, 21, 0.8);
+    margin: auto;
+}
+
+
+
+body{
+    background-image: url('https://wallpapercave.com/wp/wp4889244.jpg') ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-weight: bolder;
+}
+
+.logintable{
+    font-family:'system-ui';
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+    background-color: ;
+}
+
+input[type=submit]{
+        font-family:'system-ui';
+        font-weight: bold;
+        background-color: rgba(7, 62, 21, 0.641);
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 100%;
+}
+
+.register_form{
+    font-family:'system-ui';
+}
+
+

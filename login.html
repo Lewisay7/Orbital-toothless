@@ -2,47 +2,43 @@
 <html>
     <head>
         <title>Login Page</title>
-        <style type="text/css">
-            input[type="submit"]{
-                cursor: pointer;
-            }
-        </style>
+
+        <link rel="stylesheet" href="./LoginandRegister.css">
     </head>
 
     <body>
-<center>
-    <h1>Login Here</h1>
 
-    <form action="login.php" method="post">
+    <div class="title">
+        <center>
+            <h1>Login Here</h1>
+            <form action="login.php" method="post">
+        </center>    
 
-        <table>
-            <tr>
-                <td>Username:</td>
-                <td>
-                    <input type="text" name="user">
-                </td>
-            </tr>
+    </div>
 
-            <tr>
-<td> Password:</td>
-<td>
-    <input type="password" name="pass">
-</td>
 
-            </tr>
+    <table class="logintable">
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="user" ></td>
+        </tr>
 
-            <tr>
-                <td>
-                    <input type="submit" name="submit" value="login">
-                </td>
+        <tr>
+            <td> Password:</td>
+            <td><input type="password" name="pass" ></td>
+        </tr>
 
-                <td>
-                    Not yet a user? <a href="Register.html">Register</a>
-                </td>
-            </tr>
-        </table>
+        <tr>
+            <td colspan=2><input type="submit" name="submit" value="Login"></td>
+            
+        </tr>
+        <tr>
+            <td colspan=2><center> Not yet a user? <a href="Register.html">Register</a></center></td>
+        </tr>
+
+    </table>
     </form>
-</center>
+
 
     </body>
 </html>
