@@ -1,3 +1,11 @@
+<?php
+$user_id = $_GET['user'];//accept user id from previous page
+include("db_configuration.php");
+$sql_check = "SELECT username FROM users WHERE user_id= $user_id;";
+$result_check = mysqli_query($conn, $sql_check);
+$row_check=mysqli_fetch_assoc($result_check);
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -21,20 +29,25 @@
 </head>
 
 <body>
-    <div class="header">
+ <div class="header">
         <h1 class="header_logo">TrackUrCals</h1>
     </div>
 
     <div class="offset">
 
 
-        <form id="food_type" action=alertuser()>
+        <form action= "mainpage_process.php?user=<?php echo $user_id ?>" method="post">
             <label for="food">Choose a food:</label>
             <select name="food" id="food">
-              <option value="rice">Rice</option>
-              <option value="chicken">Chicken</option>
-              <option value="peanut">Peanut</option>
-              <option value="salad">Salad</option>
+                <?php
+                $sql_food_list = "SELECT foodtype FROM food_list;";
+                $result_food_list = mysqli_query($conn, $sql_food_list);
+
+                while ($row_food_list=mysqli_fetch_assoc($result_food_list)) {
+                    $temp_food= $row_food_list['foodtype'];
+                    ?><option value="<?php echo($temp_food) ?>"><?php echo($temp_food) ?></option><?php
+                }
+                ?>
             </select>
             <label for="input">Input(in grams): </label>
             <input type="number" id="input" name="input" max="9999" min="1">
@@ -42,12 +55,16 @@
 
             <label for="excercise">Choose an excercise:</label>
             <select name="excercise" id="excercise">
-              <option value="running">Running</option>
-              <option value="basketball">Basketball</option>
-              <option value="football">Football</option>
-              <option value="sitUp">Sit Up</option>
-              <option value="none">Lazy BumBum</option>
-        </select>
+                <?php
+                $sql_exercise_list = "SELECT exercisetype FROM exer_list;";
+                $result_exercise_list = mysqli_query($conn, $sql_exercise_list);
+
+                while ($row_exercise_list=mysqli_fetch_assoc($result_exercise_list)) {
+                    $temp_exer = $row_exercise_list['exercisetype'];
+                    ?><option value="<?php echo($temp_exer) ?>"><?php echo($temp_exer) ?></option><?php
+                }
+                ?>
+            </select>
 
             <label for="burnt">Burnt(in minutes): </label>
             <input type="number" id="burnt" name="burnt" max="1440" min="1">
@@ -57,18 +74,15 @@
                 <div class="container text-left">
                     <div class="row justify-content-center">
                         <div class="col-lg-3">
-                            <form action="#">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="pick-date" placeholder="Pick A Date">
+                                    <input type="text" class="form-control" id="pick-date" name="date" placeholder="Pick A Date">
                                 </div>
-                            </form>
                         </div>
                     </div>
 
                 </div>
             </div>
             <input type="submit" value="Save">
-            <div class="autosave">All changes saved.</div>
 
         </form>
     </div>
@@ -93,6 +107,8 @@
     <script src="js/main.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="./new.js"></script>
+    <script src="client/src/App.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 
 </html>

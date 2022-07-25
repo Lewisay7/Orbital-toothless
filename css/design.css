@@ -11344,6 +11344,8 @@ body {
     font-weight: 500;
     color:white ;
     position: absolute;
+    left: 0;
+    right: 0;
     bottom:0%;
     width:100%;
     background-color: rgba(7, 62, 21, 0.641);
@@ -11351,8 +11353,8 @@ body {
 
 .autosave{
     text-align: right;
+    position: relative;
     color:greenyellow;
-
 }
 .autosave--saving{
     color:#99999
