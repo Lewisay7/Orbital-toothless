@@ -27,14 +27,15 @@ $row_check=mysqli_fetch_assoc($result_check);
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
-    <div>
-        <button class="btn" id="btn"><span>Logout</span></button>
-    </div>
+
 </head>
 
 <body>
     <div class="header">
         <h1 class="header_logo">TrackUrCals</h1>
+    </div>
+    <div>
+        <button class="btn" id="btn" onclick="location.href = 'login.html';"><span>Logout</span></button>
     </div>
 
     <div class="offset">
