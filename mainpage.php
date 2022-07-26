@@ -22,14 +22,18 @@ $row_check=mysqli_fetch_assoc($result_check);
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/default.date.css">
+    <link rel="stylesheet" href="logout.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <div>
+        <button class="btn" id="btn"><span>Logout</span></button>
+    </div>
 </head>
 
 <body>
- <div class="header">
+    <div class="header">
         <h1 class="header_logo">TrackUrCals</h1>
     </div>
 
@@ -109,6 +113,8 @@ $row_check=mysqli_fetch_assoc($result_check);
     <script src="./new.js"></script>
     <script src="client/src/App.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 </body>
 
 </html>
