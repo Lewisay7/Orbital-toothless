@@ -26,11 +26,15 @@ $row_check=mysqli_fetch_assoc($result_check);
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/logout.css">
 </head>
 
 <body>
 <div class="header">
     <h1 class="header_logo">TrackUrCals</h1>
+</div>
+<div>
+        <button class="btn" id="btn" onclick="location.href = 'login.html';" ><span><b>Logout</b></span></button>
 </div>
 
 <div class="offset">
@@ -103,6 +107,8 @@ $row_check=mysqli_fetch_assoc($result_check);
 <script src="./new.js"></script>
 <script src="client/src/App.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 </body>
 <footer >
     <div id="site_footer">
