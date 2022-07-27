@@ -59,7 +59,7 @@ body {
     font-style: italic ;
     font-weight: 500;
     color:white ;
-    position: absolute;
+    position: fixed;
     bottom:0%;
     width:100%;
     background-color: rgba(7, 62, 21, 0.641);

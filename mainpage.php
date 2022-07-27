@@ -83,11 +83,10 @@ $row_check=mysqli_fetch_assoc($result_check);
                         </div>
                     </div>
                 </div>
-
             </div>
+            <input type="submit" value="Save">
         </div>
-        <input type="submit" value="Save">
-
+        
     </form>
 </div>
 
